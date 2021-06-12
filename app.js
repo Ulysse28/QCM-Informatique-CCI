@@ -85,7 +85,7 @@
 
      let total_score = score+score_bonus
  
-     result.textContent="Ton score : "+ score +"/ "+ number_of_questions+ "+ bonus : " + score_bonus + " = " + total_score;
+     result.textContent="Ton score : "+ score +"/ 30 + bonus : " + score_bonus + " = " + total_score;
     
  }
  
