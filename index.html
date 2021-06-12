@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+  <body>
+    <div class="container">
+      
+      <!--Beginning of the form-->
+      <form>
+        <fieldset>
+            <button type="button" id="btn1">Commencer le QCM</button><br><br>
+
+          <legend><h1>QCM Informatique CCI</h1></legend>
+
+          <div id="forms" class="hidden">
+          
+            <label >Répondez à toutes les questions, une seule bonne réponse par question</label><br>
+            <label>Ensuite cliquez sur "je suis sûr de mes réponses"</label><br>
+            <label>Enfin, validez pour obtenir vos résultats</label>
+
+
+            <br><br>
+
+            <!--Question 1-->
+            <label class="question">Que signifie TIC (dans le domaine de l'informatique) ? </label><br/>
+            
+            <!--Good-->
+            <input type="radio" id="1" name="question1" class="answer good_answer_radio"/>
+            <label for="1" class="good_answer" >Technologies de l'information et de la communication</label><br/>
+
+            <!--Wrong answers-->
+            <input type="radio" id="2" name="question1" class="answer wrong_answer_radio"/> 
+            <label for="2" class="wrong_answer" >Troubles Importants de la concentration</label><br />
+
+            <input type="radio" id="3" name="question1"  class="answer wrong_answer_radio"/>
+            <label for="3" class="wrong_answer" >Mouvements répétitifs et incontrôlables d'une partie du corps</label><br />
+            <div class="pre_result"></div>
+
+            <br>
+            <!--2-->
+            <label class="question">Qu'est-ce que l'hyperTreading ?</label><br/>
+
+            <input type="radio" id="4" name="question2" class="answer wrong_answer_radio"/>
+            <label for="4" class="wrong_answer">Un processeur à 2 coeurs physiques</label></label><br/>
+
+            <!--Good answer-->
+            <input type="radio" id="5" name="question2"  class="answer good_answer_radio"/>
+            <label for="5" class="good_answer" >Le fait de séparer un coeur physique en deux coeurs logiques</label><br />
+
+            <input type="radio" id="6" name="question2"  class="answer wrong_answer_radio"/>
+            <label for="6" class="wrong_answer" >Un seul coeur pour un seul processeur</label><br />
+            <div class="pre_result"></div>
+
+            <br>
+            <!--3-->
+
+           <label class="question">Quelle est la commande Windows pour changer de répertoire dans un terminal ?</label><br/>
+
+           <!--Good answer-->
+           <input type="radio" id="7" name="question3" class="answer good_answer_radio"/>
+           <label for="7" class="good_answer">cd</label><br />
+
+           <input type="radio" id="8" name="question3" class="answer wrong_answer_radio"/> 
+           <label for="8" class="wrong_answer" >mkdir</label><br />
+
+           <input type="radio" id="9" name="question3"  class="answer wrong_answer_radio"/>
+           <label for="9" class="wrong_answer" >ls</label><br />
+           <div class="pre_result"></div>
+           <br>
+           <!--4-->
+           <label class="question"> Le Bios est antérieur à l'UEFI </label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="10" name="question4" class="answer good_answer_radio"/>
+           <label for="10" class="good_answer">Vrai</label><br />
+
+           <input type="radio" id="11" name="question4" class="answer wrong_answer_radio"/> 
+           <label for="11" class="wrong_answer" >Faux</label><br /> 
+           <div class="pre_result"></div>
+           <br>
+
+           <label class="question"> Un système d'exploitation est </label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="101" name="question28" class="answer wrong_answer_radio"/>
+           <label for="101" class="wrong_answer">Le nom du processeur central de l'ordinateur</label><br />
+
+           <input type="radio" id="102" name="question28" class="answer good_answer_radio"/> 
+           <label for="102" class="good_answer" >L'intermédiaire entre la machine et l'utilisateur</label><br />
+
+           <input type="radio" id="103" name="question28" class="answer wrong_answer_radio"/> 
+           <label for="103" class="wrong_answer" >Est l'éditeur exploitant le système</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+
+
+           <label class="question"> Linux </label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="104" name="question29" class="answer good_answer_radio"/>
+           <label for="104" class="good_answer">Est un système d'exploitation fonctionnant sur PC</label><br />
+
+           <input type="radio" id="105" name="question29" class="answer wrong_answer_radio"/> 
+           <label for="105" class="wrong_answer" >Est un système d'exploitation fonctionnant sur Macintosh</label><br />
+           <div class="pre_result"></div>
+           <br>
+
+           <label class="question"> Le système d'exploitation fait partie </label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="106" name="question30" class="answer wrong_answer_radio"/>
+           <label for="106" class="wrong_answer">Du matériel informatique</label><br />
+
+           <input type="radio" id="107" name="question30" class="answer good_answer_radio"/> 
+           <label for="107" class="good_answer" >Des logiciels de base</label><br />
+
+           <input type="radio" id="108" name="question30" class="answer wrong_answer_radio"/> 
+           <label for="108" class="wrong_answer" >Des logiciels d'applications</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+
+           <label class="question">Que permet la défragmentation d'un disque dure ?</label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="109" name="question31" class="answer wrong_answer_radio"/>
+           <label for="109" class="wrong_answer">Supprimer les parties non-utilisées</label><br />
+
+           <input type="radio" id="110" name="question31" class="answer good_answer_radio"/> 
+           <label for="110" class="good_answer" >Optimiser le temps de réponse en limitant l'éparpillement des fichiers</label><br />
+
+           <input type="radio" id="111" name="question31" class="answer wrong_answer_radio"/> 
+           <label for="111" class="wrong_answer" >Récupérer de l'espace en supprimant des ficihers inutiles</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+
+           <label class="question">A combien de bits correspond 8 octets ?</label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="112" name="question32" class="answer wrong_answer_radio"/>
+           <label for="112" class="wrong_answer">8 bits</label><br />
+
+           <input type="radio" id="113" name="question32" class="answer wrong_answer_radio"/> 
+           <label for="113" class="wrong_answer" >1 bit</label><br />
+
+           <input type="radio" id="114" name="question32" class="answer good_answer_radio"/> 
+           <label for="114" class="good_answer" >64 bits</label><br />
+
+           <input type="radio" id="115" name="question32" class="answer wrong_answer_radio"/> 
+           <label for="115" class="wrong_answer" >80 nano-octets</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+
+
+           <label class="question">Lequel de ces composants n'est pas indispensable au fonctionnement d'un ordinateur ?</label><br/>
+           
+           <!--Good answer-->
+           <input type="radio" id="116" name="question33" class="answer wrong_answer_radio"/>
+           <label for="116" class="wrong_answer">Disque dure</label><br />
+
+           <input type="radio" id="117" name="question33" class="answer wrong_answer_radio"/> 
+           <label for="117" class="wrong_answer" >Carte Mère</label><br />
+
+           <input type="radio" id="118" name="question33" class="answer wrong_answer_radio"/> 
+           <label for="118" class="wrong_answer" >Ecran</label><br />
+
+           <input type="radio" id="119" name="question33" class="answer good_answer_radio"/> 
+           <label for="119" class="good_answer" >Clavier</label><br />
+
+           <input type="radio" id="120" name="question33" class="answer wrong_answer_radio"/> 
+           <label for="120" class="wrong_answer" >CPU</label><br />
+           <div class="pre_result"></div>
+
+           
+
+           
+
+
+           
+           
+           <br>
+
+           <!--5-->
+          <label class="question">Raccourci du clavier pour verrouiller sa session sous Windows</label><br/>
+
+           <input type="radio" id="12" name="question5" class="answer wrong_answer_radio"/>
+           <label for="12" class="wrong_answer">Ctrl+v</label><br />
+
+           <input type="radio" id="13" name="question5" class="answer wrong_answer_radio"/> 
+           <label for="13" class="wrong_answer" >Windows+f</label><br /> 
+           
+           <input type="radio" id="14" name="question5" class="answer wrong_answer_radio"/> 
+           <label for="14" class="wrong_answer" >Alt+ctrl+supp</label><br />
+           
+           <!--Good answer-->
+           <input type="radio" id="15" name="question5" class="answer good_answer_radio"/> 
+           <label for="15" class="good_answer" >Windows+L</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+           <!--6-->
+           <label class="question">La méthode Agile permet de </label><br/>
+
+           <!--Good-->
+           <input type="radio" id="16" name="question6" class="answer good_answer_radio"/>
+           <label for="16" class="good_answer">Raccourcir les cycles de dévelopement informatique</label><br />
+
+           <input type="radio" id="17" name="question6" class="answer wrong_answer_radio"/> 
+           <label for="17" class="wrong_answer" >Concevoir un MCD</label><br /> 
+           
+           <input type="radio" id="18" name="question6" class="answer wrong_answer_radio"/> 
+           <label for="18" class="wrong_answer" >De présenter rapidement un concept ou un projet</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+           
+
+           <!--7-->
+           <label class="question">L'objectif du systéme d'information est de </label><br/>
+
+           <!--Good-->
+           <input type="radio" id="19" name="question7" class="answer good_answer_radio"/>
+           <label for="19" class="good_answer">Collecter, traiter et stoker des informations</label><br />
+           
+           <input type="radio" id="20" name="question7" class="answer wrong_answer_radio"/> 
+           <label for="20" class="wrong_answer" >Modéliser des objets </label><br /> 
+           
+           <input type="radio" id="21" name="question7" class="answer wrong_answer_radio"/> 
+           <label for="21" class="wrong_answer" >Faire des restaurations de sauvegarde le plus plus rapidement possible</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+           <!--8-->
+
+          <label class="question">Un diagramme de classe est</label> </label><br/>
+           
+           <input type="radio" id="23" name="question8" class="answer wrong_answer_radio"/>
+           <label for="23" class="wrong_answer">Un outils pour faire des algorithmes</label><br />
+
+           <!--Good-->
+           <input type="radio" id="24" name="question8" class="answer good_answer_radio"/> 
+           <label for="24" class="good_answer" >Un des  composants de UML </label><br /> 
+           
+           <input type="radio" id="25" name="question8"class="answer wrong_answer_radio"/> 
+           <label for="25" class="wrong_answer" >Elaborer un diagramme de Gant</label><br />
+           <div class="pre_result"></div>
+
+           <br>
+           <!--9-->
+
+           <label class="question">Dans la gestion de projet informatique,la MOA est </label><br/> 
+          
+           
+           <input type="radio" id="26" name="question9" class="answer wrong_answer_radio"/>
+           <label for="26" class="wrong_answer"> Maitre d'oeuvre</label><br />
+           
+           <input type="radio" id="27" name="question9" class="answer good_answer_radio"/> 
+           <label for="27" class="good_answer" >Maitre d'ouvrage</label><br /> 
+           
+           
+           <div class="pre_result"></div>
+
+           <br>
+           <!--10-->
+
+          <label class="question">Cochez l'intrus dans ces types de variables</label><br/>
+          
+          <input type="radio" id="29" name="question10" class="answer wrong_answer_radio"/>
+          <label for="29" class="wrong_answer">Entier</label><br/>
+
+          <input type="radio" id="30" name="question10" class="answer wrong_answer_radio"/> 
+          <label for="30" class="wrong_answer" >Réel</label><br /> 
+        
+          <input type="radio" id="31" name="question10" class="answer wrong_answer_radio"/> 
+          <label for="31" class="wrong_answer" >Chaine de caractères</label><br />
+        
+          <input type="radio" id="32" name="question10" class="answer wrong_answer_radio"/> 
+          <label for="32" class="wrong_answer" >Liste</label><br /> 
+           
+          <input type="radio" id="33" name="question10" class="answer good_answer_radio"/> 
+          <label for="33" class="good_answer" >Date</label><br />
+          <div class="pre_result"></div>
+          <!--11-->
+        <label class="question">Voici un algorithme : <br>
+        A=1<br>
+        B = 8<br>
+        A = A +B<br>
+        B=2<br>
+        Que vaut la variable C à la fin de l'algorithme ?
+
+        </label><br/>
+
+           
+       
+
+        <input type="radio" id="34" name="question11" class="answer good_answer_radio"/>
+        <label for="34" class="good_answer">10</label><br/>
+
+        <input type="radio" id="36" name="question11" class="answer wrong_answer_radio"/> 
+        <label for="36" class="wrong_answer" >3</label><br /> 
+        
+        <input type="radio" id="37" name="question11" class="answer Good_answer_radio"/> 
+        <label for="37" class="wrong_answer" >9</label><br />
+        <div class="pre_result"></div>
+
+        <br>
+
+        <!--12-->
+        <label class="question">En sécurité inforamtique qu'est-ce que signifie DIC ?</label><br/>
+
+        <input type="radio" id="38" name="question12" class="answer wrong_answer_radio"/>
+        <label for="38" class="wrong_answer">Disponible-Informatique-Contractuelle</label><br/>
+
+        <input type="radio" id="39" name="question12" class="answer wrong_answer_radio"/> 
+        <label for="39" class="wrong_answer" >Detection-Imputabilité-involontaire</label><br /> 
+        
+        <input type="radio" id="40" name="question12" class="answer good_answer_radio"/> 
+        <label for="40" class="good_answer" >Disponibilité-intégrité-Confidentialité</label><br />
+        <div class="pre_result"></div>
+
+        <br>
+        
+       
+       <!--14-->
+        <label class="question">Qu'est-ce que VNC (sous linux)?</label><br/>  
+            
+        <input type="radio" id="43" name="question14" class="answer wrong_answer_radio"/>
+       <label for="43" class="wrong_answer">Un système d'application à télécharger pour combattre les virus informatiques</label><br/>
+
+       <input type="radio" id="44" name="question14" class="answer good_answer_radio"/> 
+       <label for="44" class="good_answer" >Une application pour prendre en main une machine à distance après authentification</label><br /> 
+       <div class="pre_result"></div>
+
+       <br>
+
+       <!--15-->
+       <label class="question">Les attaques informatiques les plus courantes: trouvez l'intru</label><br/> 
+
+       <input type="radio" id="45" name="question15" class="answer wrong_answer_radio"/>
+       <label for="45" class="wrong_answer">Arnaque par Dos ou DDOS</label><br/>
+
+       <input type="radio" id="46" name="question15" class="answer Good_answer_radio"/> 
+       <label for="46" class="wrong_answer" >Arnaque l'homme au milieux</label><br /> 
+
+       <input type="radio" id="47" name="question15" class="answer wrong_answer_radio"/>
+       <label for="47" class="wrong_answer">Hameconage</label><br/>
+
+       <input type="radio" id="48" name="question15" class="answer Good_answer_radio"/> 
+       <label for="48" class="wrong_answer" >téléchargement furtif</label><br /> 
+
+       <input type="radio" id="49" name="question15" class="answer wrong_answer_radio"/>
+       <label for="49" class="wrong_answer">Cassage de mot de passe</label><br/>
+
+       <input type="radio" id="50" name="question15" class="answer good_answer_radio"/> 
+       <label for="50" class="good_answer" >Attaque de la carte graphique</label><br /> 
+
+       <input type="radio" id="51" name="question15" class="answer wrong_answer_radio"/>
+       <label for="51" class="wrong_answer">Attaque de la carte graphique(attaque SMURF)</label><br>
+
+       <input type="radio" id="52" name="question15" class="answer Good_answer_radio"/> 
+       <label for="52" class="wrong_answer" >Injection SQL</script></label><br /> 
+
+       <input type="radio" id="53" name="question15" class="answer Good_answer_radio"/> 
+       <label for="53" class="wrong_answer" >Crous site scripting</label><br /> 
+
+       <input type="radio" id="54" name="question15" class="answer wrong_answer_radio"/>
+       <label for="54" class="wrong_answer">Ecoute clandestine</label><br/>
+
+      <input type="radio" id="56" name="question15" class="answer Good_answer_radio"/> 
+       <label for="56" class="wrong_answer" >Arnaque des anniverssaires</label><br /> 
+      
+      <input type="radio" id="57" name="question15" class="answer Good_answer_radio"/> 
+      <label for="57" class="wrong_answer" >Malware</label><br /> 
+      <div class="pre_result"></div>
+
+      
+      
+
+       <hr/>
+            <!--First question-->
+            <label class="question">Qu'est ce qu'un GLPI:</label><br/>
+            
+            <!--Right answer-->
+            <input type="radio" id="58" name="question17" class="answer wrong_answer_radio"/>
+            <label for="58" class="wrong_answer" >Gestion Logiciel et Protocole Informatique</label><br/>
+
+            <!--Wrong answers-->
+            <input type="radio" id="59" name="question17" class="answer wrong_answer_radio"/> 
+            <label for="59" class="wrong_answer" >Gestionnaire de listing prioritaire d'information </label><br />
+
+            <input type="radio" id="60" name="question17" class="answer good_answer_radio"/>
+            <label for="60" class="good_answer" >Gestion libre de parc informatique</label><br />
+
+            <input type="radio" id="61" name="question17" class="answer wrong_answer_radio"/>
+            <label for="61" class="wrong_answer" >Groupe de logiciel pratique à l'information</label><br />
+
+          <div class="pre_result"></div>
+       <hr/>
+
+            <!--Second question-->
+            <label class="question">Qu'est-ce que le dual boot?</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" name='question18' class="answer wrong_answer_radio" id="62"/>
+            <label for="62" class="wrong_answer" >Un logiciel de défragmentation du disque. </label></br>
+
+            <!--Right answer-->
+            <input type="radio" name='question18' class="answer good_answer_radio" id="63"/>
+            <label for="63" class="good_answer" >La possibilité d'installer deux OS en partitionnant un disque en deux.</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" name='question18' class="answer wrong_answer_radio" id="64"/>
+            <label for="64" class="wrong_answer" >La possibilité deux booter deux disques en même temps </label></br>
+            
+            <input type="radio" name='question18' class="answer wrong_answer_radio" id="65"/>
+            <label for="65" class="wrong_answer" >Permet de faire deux sauvegardes systèmes.</label></br>
+            <div class="pre_result"></div>
+      <hr/>
+
+            <!--Third question-->
+            <label class="question">Qu’est-ce que ITIL? </label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" name='question19' class="answer wrong_answer_radio" id="66"/>
+            <label for="66" class="wrong_answer" >Une loi sur l’informatique</label></br>
+            <!--Right answer-->
+            <input type="radio" name='question19' id="67" class="answer good_answer_radio"/>
+            <label for="67" class="good_answer"  >Un référentiel de bonne pratique</label></br>
+
+             <!--Wrong answers-->
+            <input type="radio" name='question19' class="answer wrong_answer_radio" id="68"/>
+            <label for="68" class="wrong_answer"  >Un logiciel de cyber sécurité</label></br>
+            <div class="pre_result"></div>
+      <hr/>
+
+
+            <!--Fourth question-->
+            <label class="question">Quelle sauvegarde fait-on en premier ?</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="69" name='question20' class="answer wrong_answer_radio"/>
+            <label for="69" class="wrong_answer " >la différentielle puis la complète</label></br>
+
+             <!--Right answer-->
+            <input type="radio" id="70" name='question20' class="answer good_answer_radio"/>
+            <label for="70" class="good_answer "  >la complète puis la différentielle</label></br>
+            <div class="pre_result"></div>
+      <hr>      
+
+            <!--Question 5-->
+            <label class="question">Qu’est-ce qu’un logiciel libre?</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="71" name='question21' class="answer wrong_answer_radio"/>
+            <label for="71" class="wrong_answer " >Un logiciel gratuit ou l’utilisateur peut avoir accès sur tout le contenu</label></br>
+
+            <input type="radio" id="72" name='question21' class="answer wrong_answer_radio"/>
+            <label for="72" class="wrong_answer" >Un logiciel payant ou il est possible de copier, modifier à volonté</label></br>
+
+             <!--Right answer-->
+            <input type="radio" id="73" name='question21' class="answer good_answer_radio"/>
+            <label for="73" class="good_answer ">Un logiciel ou toutes personnes peut exécuter, modifier, copier, diffuser en toute liberté</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="74" name='question21' class="answer wrong_answer_radio"/>
+            <label for="74" class="wrong_answer" >Une application où il est possible de faire tout ce que l’on souhaite</label></br>
+            
+            <input type="radio" id="75" name='question21' class="answer wrong_answer_radio"/>
+            <label for="75" class="wrong_answer" >Est la liberté d’expression, prenez exemple sur Josiane</label></br>
+            <div class="pre_result"></div>
+      <hr>      *
+
+
+            <!--6-->
+            <label class="question">Qu’est-ce qu’un plugin ? </label></br>
+
+            <!--Right answer-->
+            <input type="radio" id="76" name='question22' class="answer good_answer_radio"/>
+            <label for="76" class="good_answer " >Les plugins sont de petits programmes complémentaires<br> qui ajoutent des fonctions aux applications web et programmes de bureau</label></br>
+            
+            <!--Wrong answers-->
+            <input type="radio" id="77" name='question22' class="answer wrong_answer_radio"/>
+            <label for="77" class="wrong_answer" >Un site où il faut créer un login et un Mot de passe</label></br>
+
+            <input type="radio" id="78" name='question22' class="answer wrong_answer_radio"/>
+            <label for="78" class="wrong_answer ">Une extension de fichier qui permet de faire fonctionner une appli en panne</label></br>
+
+            <input type="radio" id="79" name='question22' class="answer wrong_answer_radio"/>
+            <label for="79" class="wrong_answer" >Consiste à brancher des plugs (CPL) pour permettre une connexion en filaire et non en wifi</label></br>
+            
+            <input type="radio" id="80" name='question22' class="answer wrong_answer_radio"/>
+            <label for="80" class="wrong_answer" >Demander à Marc de chercher sur Gogol !</label></br>
+            <div class="pre_result"></div>
+    <hr>      
+
+            <!--7-->
+            <label class="question">A quoi sert un onduleur ? </label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="81" name='question23' class="answer wrong_answer_radio"/>
+            <label for="81" class="wrong_answer " >Permet de convertir un signal électrique en signal lumineux (fibre optique)</label></br>
+
+            <input type="radio" id="82" name='question23' class="answer wrong_answer_radio"/>
+            <label for="82" class="wrong_answer" >A la même fonction qu’un ondulateur et récupéré les données</label></br>
+
+            <input type="radio" id="83" name='question23' class="answer wrong_answer_radio"/>
+            <label for="83" class="wrong_answer ">Est la batterie principale d’un data center dédoublé en cas de panne</label></br>
+            
+            <!--Right answer-->
+            <input type="radio" id="84" name='question23' class="answer good_answer_radio"/>
+            <label for="84" class="good_answer" >Est une batterie de secours qui sert à éviter de perdre les données<br> en cas de coupure électrique</label></br>
+            
+            <!--Wrong answers-->
+            <input type="radio" id="85" name='question23' class="answer wrong_answer_radio"/>
+            <label for="85" class="wrong_answer" >Je demande à mon joker Ulysse</label></br>
+            <div class="pre_result"></div>
+    <hr>      
+
+            <!--8-->
+            <label class="question">Qu’est-ce que la persistance des données ? </label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="86" name='question24' class="answer wrong_answer_radio"/>
+            <label for="86" class="wrong_answer " >Faire une image disque pour effectuer une copie de vos données</label></br>
+
+            <input type="radio" id="87" name='question24' class="answer wrong_answer_radio"/>
+            <label for="87" class="wrong_answer" >C’est un logiciel de clonage des données via un ordinateur</label></br>
+
+             <!--Right answer-->
+            <input type="radio" id="88" name='question24' class="answer good_answer_radio"/>
+            <label for="88" class="good_answer ">Fait en sorte qu’un programme puisse se terminer sans que ses données ne soient perdues</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="89" name='question24' class="answer wrong_answer_radio"/>
+            <label for="89" class="wrong_answer" >Permet d’éviter la perte de données en les stockant directement dans le cloud</label></br>
+            
+            <input type="radio" id="90" name='question24' class="answer wrong_answer_radio"/>
+            <label for="90" class="wrong_answer" >Demander un remontant à Bob Jamy</label></br>
+            <div class="pre_result"></div>
+
+            <br>
+
+              <!--8-->
+              <label class="question">Que signifie PC en anglais ? </label></br>
+
+              <!--Wrong answers-->
+              <input type="radio" id="121" name='question34' class="answer wrong_answer_radio"/>
+              <label for="121" class="wrong_answer " >Protection Compute</label></br>
+  
+              <input type="radio" id="122" name='question34' class="answer good_answer_radio"/>
+              <label for="122" class="good_answer" >Personal Computer</label></br>
+  
+               <!--Right answer-->
+              <input type="radio" id="123" name='question34' class="answer wrong_answer_radio"/>
+              <label for="123" class="wrong_answer ">Personal Corporation</label></br>
+  
+            
+              <div class="pre_result"></div>
+
+              <br>
+
+
+              <!--8-->
+              <label class="question">A quoi sert GNS 3</label></br>
+
+              <!--Wrong answers-->
+              <input type="radio" id="124" name='question35' class="answer wrong_answer_radio"/>
+              <label for="124" class="wrong_answer " >A simuler des systèmes d'exploitation </label></br>
+  
+              <input type="radio" id="125" name='question35' class="answer good_answer_radio"/>
+              <label for="125" class="good_answer" >A simuler des réseaux</label></br>
+  
+               <!--Right answer-->
+              <input type="radio" id="126" name='question35' class="answer wrong_answer_radio"/>
+              <label for="126" class="wrong_answer ">A éditer du code</label></br>
+  
+            
+              <div class="pre_result"></div>
+    <hr/>
+    <hr/>
+
+
+            <h2 style="color:rgb(49, 206, 218)">Langage de programmation web (bonus)</h2>
+
+            <!--9-->
+            <label class=" question bonus">Comment écrire un commentaire dans CSS?</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="91" name='question25' class="answer wrong_answer_bonus"/>
+            <label for="91" class="wrong_answer">&lt;!--blablabla--&gt;</label></br>
+
+            <input type="radio" id="92" name='question25' class="answer wrong_answer_bonus"/>
+            <label for="92" class="wrong_answer" >//blablabla</label></br>
+
+             <!--Right answer-->
+            <input type="radio" id="93" name='question25' class="answer good_answer_bonus"/>
+            <label for="93" class="good_answer ">/* blablabla */</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="94" name='question25' class="answer wrong_answer_bonus"/>
+            <label for="94" class="wrong_answer" >(!--blablabla --)</label></br>
+
+            <div class="pre_result"></div>
+
+
+    <hr/>
+            <!--10-->
+            <label class="  question bonus">A l’intérieur de quel élément HTML insert ton le javascript ? </label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="95" name='question26' class="answer wrong_answer_bonus"/>
+            <label for="95" class="wrong_answer">&lt;js&gt;</label></br>
+            <!--Right answer-->
+            <input type="radio" id="96" name='question26' class="answer good_answer_bonus"/>
+            <label for="96" class="good_answer" >&lt;script&gt;</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="97" name='question26' class="answer wrong_answer_bonus"/>
+            <label for="97" class="wrong_answer ">&lt;javascript&gt;</label></br>
+
+            <div class="pre_result"></div>
+            
+    <hr/>
+    <!--11-->
+            <label class=" question bonus">Comment écrire une condition en javascript ?</label></br>
+
+            <!--Right answer-->
+            <input type="radio" id="99" name='question27' class="answer good_answer_bonus"/>
+            <label for="99" class="good_answer">if (i == 5)</label></br>
+
+            <!--Wrong answers-->
+            <input type="radio" id="100" name='question27' class="answer wrong_answer_bonus"/>
+            <label for="100" class="wrong_answer" >if i == 5</label></br>
+
+            
+            <input type="radio" id="121" name='question27' class="answer wrong_answer_bonus"/>
+            <label for="121" class="wrong_answer ">if i = 5</label></br>
+
+            <div class="pre_result"></div>
+            </div>
+        </fieldset>
+        <br><br>
+
+
+        <button id="btn2" class="btn btn-primary hidden" >Je suis sûr de mes réponses</button><p id="message"></p>
+
+        <br><br>
+
+        <button id="btn3" class="btn btn-primary hidden" disabled>Valider</button><p id="result"></p>
+
+
+        <a href="images/page.html">Surtout ne pas cliquer</a>
+
+
+      </form>
+
+      
+    </div>
+
+    
+    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+ integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+ crossorigin="anonymous"></script>
+
+ <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
