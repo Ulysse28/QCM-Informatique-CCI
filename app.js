@@ -224,7 +224,3 @@
  // pour masquer et afficher les questions
  
  const hide_show = document.querySelector('#forms');
- 
-
- 
- 
