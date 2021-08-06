@@ -1,4 +1,9 @@
 /**
+ * QCM Informatique
+ * Javascript File
+ */
+
+/**
  * The score
  * the numbers of answers 
  * the numbers of questions
@@ -13,8 +18,6 @@
  const button2 = document.getElementById('btn2');
  const button3 = document.getElementById('btn3');
 
-
- 
  //All the questions
  const questions = document.getElementsByClassName('question');
 
@@ -22,17 +25,11 @@
  const bonus = document.getElementsByClassName('bonus');
  const good_answer_bonus = document.getElementsByClassName("good_answer_bonus");
 
- console.log("bonus good" + good_answer_bonus.length)
-
- console.log(bonus.length)
- 
  //the good answers
  const good_answer = document.getElementsByClassName('good_answer');
  //The radio button which are good counting_answers
  const radio_good = document.getElementsByClassName('good_answer_radio');
- console.log(radio_good.length);
 
- 
  //The wrong answers
  const wrong_answer = document.getElementsByClassName('wrong_answer');
  //the radio button which are wrong counting_answers
@@ -40,9 +37,6 @@
  
  //The pre_result--> "wrong answer" or "good answer"
  const pre_result = document.getElementsByClassName("pre_result");
- console.log("reuslt"+pre_result.length)
-
-
  
  //The final result with comment
  const result = document.getElementById('result');
@@ -53,8 +47,7 @@
   */
  function counting_questions(){
      for(let i=0; i<questions.length;i++){
-         number_of_questions++;
-         
+         number_of_questions++;      
      }
      return number_of_questions;
  }
@@ -63,30 +56,20 @@
   * Function to count the score
   */
  function counting_score(){
-   
- 
      for(let i=0; i<radio_good.length; i++){
          if(radio_good[i].checked == true){
              score++;
-            
          }
      }
-
      for(let j = 0;j<good_answer_bonus.length; j++){
          if(good_answer_bonus[j].checked == true){
-
             score_bonus++;
-
-            
          }else{
              score_bonus = score_bonus;
          }
      }
-
      let total_score = score+score_bonus
- 
      result.textContent="Ton score : "+ score +"/ 30 + bonus : " + score_bonus + " = " + total_score;
-    
  }
  
  /*
@@ -96,33 +79,19 @@
   * For each questions
   */
  function display_results(){
-
-
-    
-
     for(let i=0; i<pre_result.length; i++){
        for(let j=0; j<radio_good.length; j++){
-           
            if(radio_good[j].checked ==true){
-               
                pre_result[j].textContent = "Bonne réponse!";
                console.log("bonne" + j);
-              
                pre_result[j].classList.add('green', 'bold');
-               
              }else{
                pre_result[j].textContent ="Mauvaise réponse !";
                console.log("mauvaise"+ j)
-               
-             
                pre_result[j].classList.add('red', 'bold');
- 
              }
          }
      }
-    
- 
- 
  }
  
  /**
@@ -137,7 +106,6 @@
      }
  }
  
- 
  /**
   * Function to count if all the questions has been answered
   * If so, the final button 'valider' will be disponible
@@ -146,18 +114,13 @@
   */
  function counting_answers(number_of_questions){
      const questions_answered = document.querySelectorAll('.answer');
- 
      //We count how many questions has been answered
      for(let i = 0; i < questions_answered.length; i++){
          if(questions_answered[i].checked==true){
              answer++;
-            
- 
          }else{
              answer= answer;
-            
          }
- 
      }
     
      //If all of them has been answered, the button 'valider' is available
@@ -170,21 +133,12 @@
      }else{
          let message = document.getElementById('message');
          message.textContent = "Attention, tu n'as pas répondu à toutes les questions, il t'en manque: "+ (number_of_questions-answer);
-         console.log("number Of question " + number_of_questions)
-
-         console.log("answer  "+ answer)
          answer = 0;
-
-
      }
  }
  
- 
- 
- 
  button1.addEventListener("click", function(e) {
      e.preventDefault();
- 
      number_of_questions =  counting_questions();
      button1.classList.add('hidden');
      hide_show.classList.remove('hidden');
@@ -197,15 +151,9 @@
   * if all the questions has been answered,
   * the button 'valider' is available
   */
- 
- 
- 
  button2.addEventListener('click', function(e){
      e.preventDefault();
-     
-  
      counting_answers(number_of_questions);
- 
  })
  
  /**
@@ -222,5 +170,4 @@
  })
  
  // pour masquer et afficher les questions
- 
  const hide_show = document.querySelector('#forms');
