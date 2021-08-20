@@ -4,17 +4,12 @@ CSS File
 */
 
 body {
-  background: url("images/background.jpg") fixed center;
-  max-width: 80%;
-  margin-left: 150px;
+  background: url("images/background.jpg")  center;
 }
 
 * {
   color: rgb(255, 255, 255);
 }
-
-/*Color green for the rigth answers
-and red for the wrong*/
 
 .green {
   color: rgb(87, 177, 87);
@@ -39,7 +34,6 @@ and red for the wrong*/
 
 h1 {
   color: white;
-  /* -webkit-text-stroke: 1px rgb(204, 5, 5);  */
   text-align: center;
   text-decoration: underline;
 }
@@ -148,8 +142,21 @@ hr {
     background-position: 0 0;
   }
 }
-/* jusqu'ici */
 
 .btn {
   margin-left: 300px;
+}
+
+
+@media screen and (max-width:800px){
+
+  #btn1{
+    width:55%;
+    font-size:25px;
+    margin-left:30%;
+  }
+
+  .btn{
+    margin:auto;
+  }
 }
